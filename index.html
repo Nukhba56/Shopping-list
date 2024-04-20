@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <style>
+        body{
+            background-color:bisque;      
+            text-align: center;
+        
+        }
+        .list-items{
+            display: block;
+            border: 1px solid goldenrod;
+            width: 20%;
+            margin-top: 10px;
+            margin-left: 560px;
+            padding: 15px;
+    
+        }
+        .del{
+            float: left;
+            color: red;
+            border: none;
+            background-color: bisque;
+        }
+        #add{
+            background-color: black;
+            color: aliceblue;
+            width: 220px;
+            height: 30px;
+        }
+        #update{
+            background-color: black;
+            color: aliceblue;
+            width: 220px;
+            height: 30px;
+            display: none;
+        }
+        #clear{
+            background-color: bisque;
+            color: grey;
+            border: 1px solid gray;
+            width: 320px;
+            height: 40px;
+        }
+        input{
+            height: 30px;
+            border: none;
+            border-bottom:1px solid grey ;
+            background-color: bisque;
+
+        }
+        a{
+            text-decoration: none;
+            color:darkblue;
+        }
+        img{
+            width: 20px; 
+            border: 1px solid blueviolet; 
+
+        }
+        .edit{
+            background-color: bisque;
+            border: none;
+            float: right;
+            color: blue;    
+        }
+      
+          
+
+    </style>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    
+        <input type="text" id="enter" placeholder="Enter item-----">
+        <br><br>
+        <button id="add">+ Add Item</button>
+        <button id="update"> Update Item</button>
+        <br><br>
+        <input type="text" id="filter" placeholder="Filter items-----">
+    <ul id="list">
+        <h3>Items Added Here:</h3>
+        <li class="list-items"><a--- href="#">Apple </a><Button class="del">X</Button><Button class="edit">Edit</Button></li>
+        <li class="list-items"><a href="#">Orange juice</a><Button class="del">X</Button><Button class="edit">Edit</Button></li>
+        <li class="list-items"><a href="#">Oreo</a><Button class="del">X</Button><Button class="edit">Edit</Button></li>
+        <li class="list-items"><a href="#">Milk</a><Button class="del">X</Button><Button class="edit">Edit</Button></li>
+    </ul>
+    <Button id="clear">Clear All</Button>
+    <script src="app.js"></script>
+</body>
+</html>
